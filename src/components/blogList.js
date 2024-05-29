@@ -20,7 +20,7 @@ const BlogList = (props) => {
     <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 25, lg: 25 }}>
       {blogs.map((b, idx) => 
         <Grid item xs={6} key={idx}>
-          <BasicCard />
+          <BasicCard blog={b}/>
         </Grid>
       )}
     </Grid>
